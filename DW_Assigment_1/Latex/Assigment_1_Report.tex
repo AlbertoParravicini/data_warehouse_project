@@ -29,13 +29,7 @@ footinclude]{article}
 \usepackage{color}
 \usepackage{subcaption}
 \usepackage[nochapters, eulermath, dottedtoc ]{classicthesis}
-\usepackage{listings} % For R code
-
-\usepackage{minted} % For Rust code
-
 \usepackage{color}
-
-\usemintedstyle{tango}
 
 \usepackage{etoolbox}
 
@@ -44,24 +38,6 @@ footinclude]{article}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-
-\lstset{frame=tb,
-  language=R,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true,
-  breakatwhitespace=true,
-  tabsize=3,
-  frame=none
-}
 
 \definecolor{webbrown}{rgb}{.6,0,0}
 
@@ -93,17 +69,17 @@ footinclude]{article}
     Abbas Al-Eryani \\
     \normalsize 000439330
   \end{tabular}%
-  \ \ 
+  \ \
   \begin{tabular}{@{}c@{}}
     Geo Jolly \\
     \normalsize 000439156
    \end{tabular}%
-   \ \ 
+   \ \
   \begin{tabular}{@{}c@{}}
     Alberto Parravicini \\
     \normalsize 000437917
    \end{tabular}%
-   \ \ 
+   \ \
   \begin{tabular}{@{}c@{}}
     Almas Zhanibek \\
     \normalsize 000439431
@@ -123,7 +99,7 @@ footinclude]{article}
 Given the database specifications and the problem description, a Dimensional Fact Model (\textbf{DFM}) was created. The result is given in the figure below. \\
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.2\textwidth, center, keepaspectratio=1]{{"../Dimensional Fact Model}.png}
+    \includegraphics[width=1.2\textwidth, center, keepaspectratio=1]{{"../Dimensional Fact Model"}.png}
 \end{figure}
 \vspace{-10mm}
 \subsection{Observations}
@@ -147,9 +123,28 @@ $\bullet$ \textbf{Dimensions:}
         It should be noted that the \textit{District} doesn't belong to the hierarchy of \textit{city} and \textit{country}, as there are cities that belong to multiple districts and viceversa. It could be assumed that a district belongs to a single country, but from the given description it isn't possible to say so.
         On the same line of thought, it could be possible to build a hierarchy from \textit{store} and \textit{manager}, if it was possible that a manager was in the lead of multiple stores. This can't however be determined from the information at disposal.
      \item \textbf{\textit{Date:}} the basic element of the hierarchy is \textit{datetime}, i.e. the full date with time and time-zone. From there, it is possible to infer the day, the month, etc.\\
-         Similarly to \textit{Customer} and \textit{Staff} it is necessary to separate the dates of the rental and the one of the payment, which is optional. 
+         Similarly to \textit{Customer} and \textit{Staff} it is necessary to separate the dates of the rental and the one of the payment, which is optional.
      \item \textbf{\textit{Film:}} this dimension is linked to multiple others attribute, such as \textit{Category}and \textit{Language}; moreover, it is possible to build a small hierarchy made of \textit{Release Year} and \textit{Release Decade}. The \textit{Special feature} attribute can be used to analyze whether having commentaries or trailers can impact the popularity of a movie. In practice, it would be better to convert the attribute to a set of binary columns, so that it is possible to separate the single features from each other. \\
          The \textbf{\textit{Total Copies Available}} dimension is used to keep track of how many copies of each movie are in the inventory of each store. This values aren't already in the \textit{OLTP} database, but can be easily computed from the \textit{inventory} table.
+\end{itemize}
+
+
+\section{ROLAP Model}
+\vspace{-17mm}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.3\textwidth, center, keepaspectratio=1]{{"../Relational Schema"}.pdf}
+\end{figure}
+
+\subsection{Observations}
+The \textit{Dimensional Fact Model} was subsequently converted to a \textit{\textbf{ROLAP}} model. The model was mainly built as a textit{Snowflake} schema, to avoid redundancies and make the relational dependencies look more evident.
+It was necessary to consider that some dimensions can change over time:
+\begin{itemize}
+    \item \textit{Store} is built as a type \textbf{2B} dimension, because the manager of the store can change over time and it is useful to keep track of the historical data.
+    \item \textit{Customer} and \textit{Staff} are also built as type \textbf{2B} dimensions, as it can be useful to keep track of the \textit{Addresses} over time. It is also interesting to monitor the evolution of \textit{Active}, assuming that a customer can become active or inactive multiple times, like in the case of subscriptions.
+        Fields such as \textit{e-mail} and \textit{username} can be considered as type \textbf{1}, and their values overridden without the need to insert new tuples.
+    \item \textit{Film} uses 2 bridge tables, to connect each movies to its categories and actors. There is also another bridge table used to model the number of copies of each movie owned by each store.
+    \item The \textit{Date} is not normalized for simplicity and ease of understanding, but in practice it can be normalized if lowering the redundancy of data is needed to save space.
 \end{itemize}
 
 \end{document}
