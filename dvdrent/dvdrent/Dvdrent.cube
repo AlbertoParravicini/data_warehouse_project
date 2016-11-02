@@ -1,0 +1,394 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5f405e34-fde1-4d26-b743-113929f85ece" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dvdrent</ID>
+  <Name>Dvdrent</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="492dd93c-d89c-4bdf-9edb-06dd3f04b04a">
+      <ID>Rental</ID>
+      <Name>Rental</Name>
+      <DimensionID>Rental</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="350ee08e-963f-4fc3-8b6b-d4151175dace">
+          <AttributeID>Rental Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0e698c4d-5406-4109-a603-cf3b03bc1d7f">
+          <AttributeID>Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0e561936-1aa1-45b5-9a3d-f6273780e77e">
+          <AttributeID>Customer Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a4f1c8bb-049e-4d1f-b129-de05ae5dcfa1">
+          <AttributeID>Inventory Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac688b3c-bd6f-4482-82b5-31d274f48786">
+          <AttributeID>Film Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="61fc3fda-ba9c-4782-b479-97b6f6236b8b">
+          <AttributeID>Language Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0aba940-de1b-44ee-8435-92b5cc65bf4d">
+          <AttributeID>Store Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a128246b-bdc7-4e19-b459-902ddd31b887">
+          <AttributeID>Manager Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6dd748d6-6aaf-48b6-a4f7-f91cbd283557">
+          <AttributeID>Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ad56f058-9974-437d-8476-844bf2652347">
+          <AttributeID>City Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0977f9ae-34b3-404f-8a14-dca1ac6361a5">
+          <AttributeID>Country Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f15c2129-1250-4890-a2e0-9d3306346bfc">
+      <ID>Customer</ID>
+      <Name>Customer</Name>
+      <DimensionID>Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1ebb0965-dbf7-4f7d-b00a-972aa1d857c9">
+          <AttributeID>Customer Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0d092f6d-0523-4b13-a057-67adc7d552d6">
+          <AttributeID>Store Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8735c18-a0b6-4f33-a8f5-7b28dbadc75d">
+          <AttributeID>Manager Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86315a22-3387-4762-bc80-87eaae909ace">
+          <AttributeID>Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d429b9bc-3dcd-48b9-9dfc-8498e6326b70">
+          <AttributeID>City Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="120d2637-b696-4a68-9942-0d3bfb1daf3b">
+          <AttributeID>Country Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d58cfe39-fc3c-4ca3-84d6-dbaf2c68034e">
+      <ID>Staff</ID>
+      <Name>Staff</Name>
+      <DimensionID>Staff</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c65628b2-63d5-45c9-bd39-18a7d80ae3d1">
+          <AttributeID>Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ddf62550-1f96-4799-b3f0-287b15e3e2cc">
+          <AttributeID>Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0af4d167-0a00-4017-b09f-ebc951739dd4">
+          <AttributeID>City Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f5492a74-708f-45cf-8aff-ba0f24fbd482">
+          <AttributeID>Country Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fd621ec2-598f-4bec-9630-1f2451651052">
+      <ID>Rental - Staff</ID>
+      <Name>Rental - Staff</Name>
+      <DimensionID>Staff</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6c5d3a7f-2882-445f-a4ea-a8b6430fb9a4">
+          <AttributeID>Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9da0cca0-77c3-4ca9-bf7f-5231a4c1964e">
+          <AttributeID>Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1c28b522-3a78-4db3-819a-635a0b028836">
+          <AttributeID>City Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab077af7-47fb-4de4-a315-e53603e37753">
+          <AttributeID>Country Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="67089cf0-614d-4b9a-8ea9-d41fad679631">
+      <ID>Rental - Customer</ID>
+      <Name>Rental - Customer</Name>
+      <DimensionID>Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3c9583c3-c8d4-4cfd-a176-e8663470aa78">
+          <AttributeID>Customer Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83f99525-d5c8-4b5c-a3bb-b194b5d5e531">
+          <AttributeID>Store Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="351df362-213f-4fe2-85c0-7db93350b6b1">
+          <AttributeID>Manager Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a38ba251-cadb-4a5a-9096-d9de730aa93f">
+          <AttributeID>Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fc6c40bd-948c-49c0-b69b-c70fdac141ce">
+          <AttributeID>City Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a530e6f-9b5c-4eca-a685-2e04a4e8f24c">
+          <AttributeID>Country Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="be9d86e8-ad16-4663-bee2-8c6f2ea40fd8">
+      <ID>Rental - Customer - Manager Staff</ID>
+      <Name>Rental - Customer - Manager Staff</Name>
+      <DimensionID>Staff</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="38c32fe0-ba35-4c94-baaf-0fa326740b2a">
+          <AttributeID>Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6af875bc-eba0-470e-a155-58822fd9e8ad">
+          <AttributeID>Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bea187e2-8ec8-4f5d-a2c0-2c5f820f9062">
+          <AttributeID>City Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0effb457-9f23-4ea9-ba20-65e743309ff9">
+          <AttributeID>Country Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="968b61ab-c4e8-43be-a805-00c38600b287">
+      <ID>Rental - Manager Staff</ID>
+      <Name>Rental - Manager Staff</Name>
+      <DimensionID>Staff</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="45393c29-bd12-4b77-900f-fedeb11705ea">
+          <AttributeID>Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="948eb1f5-739a-4d67-b6bd-ba173b92500d">
+          <AttributeID>Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="60751f04-c959-4dfa-a6d9-ca11f8e7d887">
+          <AttributeID>City Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1010d874-6205-4ab7-ae53-69ed89daba84">
+          <AttributeID>Country Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e5d4b61d-6d8b-4d14-b047-0a7c882ebb11">
+      <ID>Customer - Manager Staff</ID>
+      <Name>Customer - Manager Staff</Name>
+      <DimensionID>Staff</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6b9f9fa4-8eb1-4964-bc2a-ec432f23289d">
+          <AttributeID>Staff Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ecc90a8f-9fe6-4591-ae65-87c857fa1bde">
+          <AttributeID>Address Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="60f0389e-b4a4-4059-88fe-cf41abeafb5d">
+          <AttributeID>City Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b2854fc8-9e1e-4abd-9c4d-96338b992bab">
+          <AttributeID>Country Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="c1247dfd-9b8c-416e-9304-36b0f694849e">
+      <ID>Payment</ID>
+      <Name>Payment</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="53a7d328-ce82-4354-b358-3a613d1dbb5e">
+          <ID>Amount</ID>
+          <Name>Amount</Name>
+          <Source dwd:design-time-name="c4fc6b85-b030-4233-b06e-44516208c889">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b56c7473-b49e-4ed4-a9a0-61ec8dbc8290">
+              <TableID>dbo_payment</TableID>
+              <ColumnID>amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b8325f87-68a2-4fbc-a75e-2ab90a39d3d0">
+          <ID>Payment Count</ID>
+          <Name>Payment Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="1b2e830a-23d8-4fc7-8bc6-39e16342e3d4">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c4e2cdd3-ae0a-43b3-b0a7-786873ca3ec3">
+              <TableID>dbo_payment</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7d4aec9f-2972-4dec-9457-b29bf60a604f">
+          <CubeDimensionID>Rental</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="290b2696-d8cc-4529-ba61-5aa8d29c1585">
+              <AttributeID>Rental Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ddd6bba0-a6a9-4912-b8fc-17503612ab51">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cc5c56a1-004f-44d4-a70d-b9589665dd06">
+                    <TableID>dbo_payment</TableID>
+                    <ColumnID>rental_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="69b9210d-f89e-45cd-b909-9c624e5f2705">
+          <CubeDimensionID>Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="69e36e0a-f20c-48bf-9d1e-88c5be15eb82">
+              <AttributeID>Customer Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="75d54db8-b754-4218-8380-46a0bb1074a9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4f90e183-224c-46eb-90fa-cb4ae9e27cb6">
+                    <TableID>dbo_payment</TableID>
+                    <ColumnID>customer_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6340ad97-fb12-47e8-87ce-8fbad3aa9e3e">
+          <CubeDimensionID>Staff</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ffc751cd-510e-41b2-b4f5-6568ae0388e9">
+              <AttributeID>Staff Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d2a22333-9f17-4b1f-bcc0-5bb87a9b7d1c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4e59aef6-4559-40f7-bd18-11eac98fc3dc">
+                    <TableID>dbo_payment</TableID>
+                    <ColumnID>staff_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="43cbb022-9ead-4527-84d2-c1001c8f48c1">
+          <CubeDimensionID>Rental - Staff</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b81195f0-9939-422b-8ea7-f30a044f5a7d">
+              <AttributeID>Staff Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Rental</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Staff Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="957f08e6-a5f3-4ca1-8e4e-9de3fcd881c7">
+          <CubeDimensionID>Rental - Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9cd0e604-d52e-4a1d-bd31-2cd57df74e72">
+              <AttributeID>Customer Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Rental</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Customer Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="f0dbc4e1-c8be-4d9f-bce2-4b1124abfcad">
+          <CubeDimensionID>Rental - Customer - Manager Staff</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="12eed5ef-3800-490d-b72b-423c2c2857cb">
+              <AttributeID>Staff Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Rental - Customer</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Manager Staff Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9e65e23f-36f5-4340-b682-069a0425f9c4">
+          <CubeDimensionID>Rental - Manager Staff</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bf1a021e-7b92-441f-99f0-6d9443afdf7a">
+              <AttributeID>Staff Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Rental</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Manager Staff Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="06e0c830-0e64-454e-adfb-6f307b8022e3">
+          <CubeDimensionID>Customer - Manager Staff</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b9f84400-b981-4560-acf5-73fced4bbbe6">
+              <AttributeID>Staff Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Customer</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Manager Staff Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="c4d16d62-daf7-42ef-8da6-11ff47d4a8e6">
+    <DataSourceViewID>Dvdrent</DataSourceViewID>
+  </Source>
+</Cube>

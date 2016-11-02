@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license id="cc03e496-6ac8-4976-b199-170223f3d6d0" expiration="2017-10-03T00:00:00.0000000" type="Standard" Edition="Educational" MaintenanceExpiration="2017-10-03T00:00:00.0000000" ApplicationName="Indyco Builder">
+  <name>Alberto Parravicini</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>H2p2rZGvMmfIQslx83Uq6ztcZ40=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>esRHwo5kZyYi9Y+a53LTot4MZEGnMHBk8r+ktADjjwuOqvXC1/CFPa/GQeBEyOnAZl9UuiVSWAHU+MxINEbVxwntGr/oXweGbE97mE0t0ypicquOz6wMpMPpevFiBZWhF9nwNz6UU0qNfK3fFzHuus1rJRlBlx7rdsEkI60sLv4=</SignatureValue>
+  </Signature>
+</license>
