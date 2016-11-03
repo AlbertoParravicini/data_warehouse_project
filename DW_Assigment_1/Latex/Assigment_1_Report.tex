@@ -121,10 +121,10 @@ $\bullet$ \textbf{Dimensions:}
     \item \textbf{\textit{Staff:}} this dimension is structured similarly to \textit{customer}. Once again, it is required to distinguish between the staff member related to the rental and the (optional) one related to the payment.
     \item \textbf{\textit{Store}}, \textbf{\textit{Customer}} and \textbf{\textit{Staff}} are all connected to the \textbf{\textit{Address}} dimension.
         It should be noted that the \textit{District} doesn't belong to the hierarchy of \textit{city} and \textit{country}, as there are cities that belong to multiple districts and viceversa. It could be assumed that a district belongs to a single country, but from the given description it isn't possible to say so.
-        On the same line of thought, it could be possible to build a hierarchy from \textit{store} and \textit{manager}, if it was possible that a manager was in the lead of multiple stores. This can't however be determined from the information at disposal.
+        On the same line of thought, it could be possible to build a hierarchy from \textit{store} and \textit{manager}, if it could be said that a manager was in the lead of multiple stores. This can't however be determined from the information at disposal.
      \item \textbf{\textit{Date:}} the basic element of the hierarchy is \textit{datetime}, i.e. the full date with time and time-zone. From there, it is possible to infer the day, the month, etc.\\
          Similarly to \textit{Customer} and \textit{Staff} it is necessary to separate the dates of the rental and the one of the payment, which is optional.
-     \item \textbf{\textit{Film:}} this dimension is linked to multiple others attribute, such as \textit{Category}and \textit{Language}; moreover, it is possible to build a small hierarchy made of \textit{Release Year} and \textit{Release Decade}. The \textit{Special feature} attribute can be used to analyze whether having commentaries or trailers can impact the popularity of a movie. In practice, it would be better to convert the attribute to a set of binary columns, so that it is possible to separate the single features from each other. \\
+     \item \textbf{\textit{Film:}} this dimension is linked to multiple others attribute, such as \textit{Category} and \textit{Language}; moreover, it is possible to build a small hierarchy made of \textit{Release Year} and \textit{Release Decade}. The \textit{Special feature} attribute can be used to analyze whether having commentaries or trailers can impact the popularity of a movie. In practice, it would be better to convert the attribute to a set of binary attributes, so that it is possible to separate the single features from each other. \\
          The \textbf{\textit{Total Copies Available}} dimension is used to keep track of how many copies of each movie are in the inventory of each store. This values aren't already in the \textit{OLTP} database, but can be easily computed from the \textit{inventory} table.
 \end{itemize}
 
@@ -137,7 +137,7 @@ $\bullet$ \textbf{Dimensions:}
 \end{figure}
 
 \subsection{Observations}
-The \textit{Dimensional Fact Model} was subsequently converted to a \textit{\textbf{ROLAP}} model. The model was mainly built as a textit{Snowflake} schema, to avoid redundancies and make the relational dependencies look more evident.
+The \textit{Dimensional Fact Model} was subsequently converted to a \textit{\textbf{ROLAP}} model. The model was mainly built as a \textit{Snowflake} schema, to reduce redundancy and make the relational dependencies look more evident.
 It was necessary to consider that some dimensions can change over time:
 \begin{itemize}
     \item \textit{Store} is built as a type \textbf{2B} dimension, because the manager of the store can change over time and it is useful to keep track of the historical data.

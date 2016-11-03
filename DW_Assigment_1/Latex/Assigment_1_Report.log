@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.12)  2 NOV 2016 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.12)  3 NOV 2016 21:33
 entering extended mode
 **C:/Users/albyr/Documents/data_warehouse_project/DW_Assigment_1/Latex/Assigmen
 t_1_Report.tex
@@ -1156,10 +1156,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
  16905 strings out of 493673
- 284643 string characters out of 3141530
+ 284653 string characters out of 3141530
  483016 words of memory out of 3000000
  19717 multiletter control sequences out of 15000+200000
- 65160 words of font info for 255 fonts, out of 3000000 for 9000
+ 65165 words of font info for 255 fonts, out of 3000000 for 9000
  1027 hyphenation exceptions out of 8191
  54i,20n,79p,1013b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
@@ -1170,7 +1170,7 @@ Files (x86)/MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Program Files (x8
 ts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/urw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/pa
 latino/uplri8a.pfb>
-Output written on Assigment_1_Report.pdf (4 pages, 287119 bytes).
+Output written on Assigment_1_Report.pdf (4 pages, 287657 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  11 named destinations out of 1000 (max. 500000)
