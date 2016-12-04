@@ -1,0 +1,37 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \oddpage@label [2]{}
+\@writefile{lof}{\deactivateaddvspace  }
+\@writefile{lot}{\deactivateaddvspace  }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Notes about the files}{i}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Notes about the Data Warehouse Schema}{i}{section.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}ETL}{i}{section.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces This phase loads the data for \textit  {film} and \textit  {address}, and the related tables. At the beginning, all data are erased: if the data-warehouse is already empty, this part is redundant; we added it so that we could more easily test the \textit  {ETL} script.  Before generating the dimensions \textit  {store}, the \textit  {foreign key} constraint \textit  {[FK\_store\_staff]} is removed.\relax }}{ii}{figure.caption.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces This phase loads the data of the other dimensions, and populates the fact table.  After populating the table \textit  {staff}, the constraint \textit  {[FK\_store\_staff]} is restored. Before populating the fact table, the default date \textit  {1900-01-01} is added to the database (see the specific section for more details). As last step, rentals without payment have the attribute \textit  {payment\_status} set to \textit  {false}.\relax }}{ii}{figure.caption.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data-Flows}{iii}{subsection.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Loading of the \textit  {fact table}\relax }}{iv}{figure.caption.5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Loading of the \textit  {fact table}\relax }}{v}{figure.caption.6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Data-Cube}{v}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Overall structure}{vi}{subsection.4.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Loading of the \textit  {Data-Cube}. In \leavevmode {\color  {Goldenrod}yellow}, the \textit  {fact table} and the \textit  {bridge tables}.   \textit  {total\_key} is the overall key of the \textit  {fact table}, and is used by the \textit  {payment status} dimension.\relax }}{vi}{figure.caption.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Dimensions}{vii}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Attribute Relations}{viii}{subsection.4.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Attribute relationship of the dimension \textbf  {Date}. Note that the hierarchy is built on the numerical values, but when displaying, the textual names for month and semester are used. Also, level of the hierarchy use composite keys: as an example, \textit  {month} has both \textit  {month} and \textit  {year} as key.\relax }}{viii}{figure.caption.11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Attribute relationship of the dimension \textbf  {Customer}. Dimensions \textit  {Rental}, \textit  {Store} and \textit  {Staff} have a similar structure. Note that the \textit  {valide} attribute is kept so that it is possible to aggregate only using the values that are currently valid.\relax }}{viii}{figure.caption.12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Cube Usage Examples}{viii}{subsection.4.4}}

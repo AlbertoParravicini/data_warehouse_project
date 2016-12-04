@@ -1,0 +1,289 @@
+\documentclass[
+10pt,
+a4paper,
+oneside,
+headinclude,
+footinclude]{article}
+
+
+
+\usepackage[table,xcdraw,svgnames]{xcolor}
+\usepackage[capposition=bottom]{floatrow}
+\usepackage[colorlinks]{hyperref} % to add hyperlinks
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{csquotes}
+\usepackage{geometry}
+\usepackage{amsmath} % For the big bracket
+\usepackage[export]{adjustbox}[2011/08/13]
+% \usepackage{subfig}
+\usepackage{array}
+\usepackage{url}
+\usepackage{graphicx} % to insert images
+\usepackage{titlepic} % to insert image on front page
+\usepackage{listings} % to add code
+\usepackage{caption}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage{color}
+\usepackage{subcaption}
+\usepackage[nochapters, eulermath, dottedtoc ]{classicthesis}
+\usepackage{color}
+
+\usepackage{etoolbox}
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+
+\definecolor{webbrown}{rgb}{.6,0,0}
+
+\usepackage{titlesec} % to customize titles
+\titleformat{\chapter}{\normalfont\huge}{\textbf{\thechapter.}}{20pt}{\huge\textbf}[\vspace{2ex}\titlerule] % to customize chapter title aspect
+\titleformat{\section} % to customize section titles
+  {\fontsize{14}{15}\bfseries}{\thesection}{1em}{}
+
+\titlespacing*{\chapter}{0pt}{-50pt}{20pt} % to customize chapter title space
+
+\graphicspath{ {./Images/} } % images folder
+\parindent0pt \parskip10pt % make block paragraphs
+\geometry{verbose,tmargin=2cm,bmargin=3cm,lmargin=3cm,rmargin=3cm,headheight=3cm,headsep=3cm,footskip=1cm} % define margin
+\hyphenation{Fortran hy-phen-ation}
+
+\AtBeginDocument{%
+    \hypersetup{
+    colorlinks=true, breaklinks=true, bookmarks=true,
+    urlcolor=webbrown, citecolor=Black, linkcolor=Black% Link colors
+}}
+
+\pagestyle{plain}
+\title{\textbf{Data Warehousing Assigment - Part 2 Report}}
+\makeatletter
+\renewcommand\@date{{%
+  \vspace{-\baselineskip}%
+  \large\centering
+  \begin{tabular}{@{}c@{}}
+    Abbas Al-Eryani \\
+    \normalsize 000439330
+  \end{tabular}%
+  \ \
+  \begin{tabular}{@{}c@{}}
+    Geo Jolly \\
+    \normalsize 000439156
+   \end{tabular}%
+   \ \
+  \begin{tabular}{@{}c@{}}
+    Alberto Parravicini \\
+    \normalsize 000437917
+   \end{tabular}%
+   \ \
+  \begin{tabular}{@{}c@{}}
+    Almas Zhanibek \\
+    \normalsize 000439431
+  \end{tabular}
+
+}}
+\makeatother
+% =============================================== BEGIN
+
+\begin{document}
+\maketitle
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\section{Notes about the files}
+\begin{itemize}
+	\item "Package.dtsx" is the \textbf{ETL} package. For completeness, the entire \textit{integration} project is provided, in the "Assignment2" folder.
+	\item The \textbf{ETL} phase doesn't use any external connection or flat files beside \textit{source} and \textit{target}, i.e. the provided \textbf{OLTP} and \textbf{OLAP} databases. Note that the \textbf{OLAP} database has to conform with what is contained in the next section for the script to work.
+	\item The cube is contained in the "CubeFinal" folder.
+\end{itemize}
+
+\section{Notes about the Data Warehouse Schema}
+\vspace{-7mm}
+As starting point of the second assignment, we have been provided with an \textit{SQL script} to create the tables of the data warehouse. However, the script had some issues that had to be fixed before starting the \textbf{ETL procedure}:
+\begin{itemize}
+	\item Tables \textit{actor, address, category, city, country, film, inventory, language, rental} were set to have \textbf{auto-incrementing keys}: however, these tables do not use \textit{surrogate keys}, and their keys are the same of the oltp database. As such, it was necessary to remove the \textit{auto-increment} setting.
+	
+	\item Table \textit{date} was not set to have an \textit{auto-incrementing} key. Given that the tuples of this table have to be loaded from multiple sources, having an auto-incrementing key is definitely a good idea to simplify the data-warehouse management. We decided to modify the table and add an \textit{auto-incrementing} key.
+	
+	\item The cyclic \textit{foreign key} constraint between the tables \textit{store} and \textit{staff} (relatively to the store manager, and the store where he works) proved to troublesome to handle. Indeed, it is not possible to add a new store without previously having added its manager, and viceversa it's not possible to add a manager without adding his store beforehand.\\
+	To deal with this problem during the \textbf{ETL} p, it was necessary to temporarily disable these two \textit{foreign key} constraints. More details in the specific section.
+\end{itemize} 
+
+
+\section{ETL}
+This section includes pictures of the steps of the ETL procedure, with comments added where needed. \\
+Note that for brevity some data-flows are not reported, in case the data-flow simply transfers data from the \textbf{OLTP} database to the data warehouse.
+
+\vspace{-10mm}
+\begin{figure}[H]
+	\centering
+    \includegraphics[width=1.1\textwidth, center, keepaspectratio=1]{{"./main_etl_part_1"}.png}
+    \caption{This phase loads the data for \textit{film} and \textit{address}, and the related tables. At the beginning, all data are erased: if the data-warehouse is already empty, this part is redundant; we added it so that we could more easily test the \textit{ETL} script.\\ Before generating the dimensions \textit{store}, the \textit{foreign key} constraint \textit{[FK\_store\_staff]} is removed.}
+\end{figure}
+ \vspace{-5mm}
+ \begin{figure}[H]
+ 	\centering
+ 	\includegraphics[width=0.6\textwidth, center, keepaspectratio=1]{{"./main_etl_part_2"}.png}
+ 	\caption{This phase loads the data of the other dimensions, and populates the fact table.\\
+ 		After populating the table \textit{staff}, the constraint \textit{[FK\_store\_staff]} is restored. Before populating the fact table, the default date \textit{1900-01-01} is added to the database (see the specific section for more details). As last step,
+ 		rentals without payment have the attribute \textit{payment\_status} set to \textit{false}.}
+ \end{figure}
+
+
+\subsection{Data-Flows}
+$\bullet$ \textbf{Note}: the data-flow for the film dimensions is trivial and is not reported.
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.6\linewidth]{{"./address_dim"}.png}
+		\caption{Loading of \textit{address}. At the end, empty values of \textit{address2} are set to \textit{not\_present}.}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.6\linewidth]{{"./customer_dim"}.png}
+		\caption{Loading of \textit{customer}}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.6\linewidth]{{"./staff_dim"}.png}
+		\caption{Loading of \textit{staff}}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.6\linewidth]{{"./store_dim"}.png}
+		\caption{Loading of \textit{store}}
+	\end{subfigure}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth, center, keepaspectratio=1]{{"./fact_part_1"}.png}
+	\caption{Loading of the \textit{fact table}}
+\end{figure}
+
+\begin{itemize}
+	\item First of all, data are loaded from the \textit{rental} table; then a lookup is done on the \textit{payment} table, by comparing \textbf{rental\_id}.
+	
+	\item If a match is found, the rental was paid. In this case, the values of \textit{customer, staff} are updated to be the one in the \textit{payment} table. In fact, the customer and the staff who performed a rental could be different from the ones who perform the payment. The data warehouse could have been designed to hold both couples, where available, but in our case only one couple can be kept.
+	
+	\item If no match was found, the rental was not paid: in this case, \textit{amount} is set to 0, and the customer and staff who performed the rental are stored (as it is not possible to have \textit{null} values). 
+	
+	\item If no match was found, the \textit{payment date} is temporarily set to the \textit{rental date}. Later, it is substituted with the default value \textit{1900-01-01}, as it's not possible to use \textit{null} values.
+	
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth, center, keepaspectratio=1]{{"./fact_part_2"}.png}
+	\caption{Loading of the \textit{fact table}}
+\end{figure}
+
+\begin{itemize}
+	\item From the description, it is not clear what the \textit{quantity} measure is.\\
+	From the \textbf{OLTP} schema it is possible to infer that each payment refers to just one copy of a movie, so we assumed that \textit{quantity} is simply used to count the number of facts. As such, it is set to 1 for all tuples.
+	\item Then, all the keys of the fact table are loaded.
+\end{itemize}
+
+
+\section{Data-Cube}
+This section includes an explanation about the structure of the \textit{data-cube}, with pictures and comments where needed.
+
+\subsection{Overall structure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.1\textwidth, center, keepaspectratio=1]{{"./cube"}.png}
+	\caption{Loading of the \textit{Data-Cube}. In \textcolor{Goldenrod}{yellow}, the \textit{fact table} and the \textit{bridge tables}. \\
+	\textit{total\_key} is the overall key of the \textit{fact table}, and is used by the \textit{payment status} dimension.}
+\end{figure}
+
+\subsection{Dimensions}
+\vspace{-15mm}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./dimStaff_2"}.png}
+		\caption{\textit{Staff} dimension}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./dimFilm_2"}.png}
+		\caption{\textit{Film} dimension}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./dimStore_2"}.png}
+		\caption{\textit{Store} dimension}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./dimRental_2"}.png}
+		\caption{\textit{Rental} dimension}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./dimDate_2"}.png}
+		\caption{\textit{Date} dimension}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./dimCustomer_2"}.png}
+		\caption{\textit{Customer} dimension}
+	\end{subfigure}
+\end{figure}
+
+$\bullet$ Not shown, the supporting \textit{Category} and \textit{Actor} dimensions, connected to \textit{Film} through bridge tables. Also not shown, the \textit{Payment Status} dimension, which allows to aggregate distinguishing whether a rental was paid or not.
+
+\subsection{Attribute Relations}
+What follows are two examples of \textit{attribute relationships} structures. Other dimensions follow a similar pattern, and are not shown for brevity.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.1\textwidth, center, keepaspectratio=1]{{"./date_hierarchy"}.png}
+	\caption{Attribute relationship of the dimension \textbf{Date}. Note that the hierarchy is built on the numerical values, but when displaying, the textual names for month and semester are used. Also, level of the hierarchy use composite keys: as an example, \textit{month} has both \textit{month} and \textit{year} as key.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.1\textwidth, center, keepaspectratio=1]{{"./customer_hierarchy"}.png}
+	\caption{Attribute relationship of the dimension \textbf{Customer}. Dimensions \textit{Rental}, \textit{Store} and \textit{Staff} have a similar structure. Note that the \textit{valide} attribute is kept so that it is possible to aggregate only using the values that are currently valid.}
+\end{figure}
+
+
+\subsection{Cube Usage Examples}
+\vspace{-10mm}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./cube_example_1"}.png}
+		\caption{Number of rentals, divided by \textit{paid} and \textit{not paid}, and by \textit{country, city, address}.}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./cube_example_2"}.png}
+		\caption{Rental income divided by \textit{film category} and \textit{film rating}.}
+	\end{subfigure}
+\end{figure}
+
+
+\end{document}

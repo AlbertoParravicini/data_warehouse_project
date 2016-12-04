@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.1}{Notes about the files}{}% 1
+\BOOKMARK [1][-]{section.2}{Notes about the Data Warehouse Schema}{}% 2
+\BOOKMARK [1][-]{section.3}{ETL}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Data-Flows}{section.3}% 4
+\BOOKMARK [1][-]{section.4}{Data-Cube}{}% 5
+\BOOKMARK [2][-]{subsection.4.1}{Overall structure}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.2}{Dimensions}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.3}{Attribute Relations}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.4}{Cube Usage Examples}{section.4}% 9

@@ -21,7 +21,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="1721" scrolltop="-718" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="90" x="9446" y="12568" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="16" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="2" scrolltop="-718" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="90" x="8665" y="17806" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
                 </font>
@@ -149,7 +149,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-          <Value>1721</Value>
+          <Value>2</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
@@ -3858,7 +3858,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2442" scrolltop="-7825" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8202" y="12568" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2442" scrolltop="-7825" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7924" y="17806" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
                 </font>
@@ -3869,7 +3869,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="actor" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2156" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="actor" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2156" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00006c080000" />
                 </control>
@@ -4160,7 +4160,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2283" scrolltop="-6793" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7607" y="17806" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2283" scrolltop="-6793" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5728" y="17806" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
                 </font>
@@ -4171,7 +4171,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="RentalPayment" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4220" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="RentalPayment" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4220" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="000c0000b80b00007c100000" />
                 </control>
@@ -4292,6 +4292,7 @@
               <Name>Payment Status</Name>
             </AttributeRelationship>
           </AttributeRelationships>
+          <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -4326,7 +4327,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="78" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1863" scrolltop="10228" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="20227" y="17806" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="78" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1863" scrolltop="10228" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="19566" y="17806" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="0100000090019e330100065461686f6d61" />
                 </font>
@@ -5406,7 +5407,7 @@
             </Measure>
             <Measure>
               <ID>Payment Status Count</ID>
-              <Name>Payment Status Count</Name>
+              <Name>Payment Status</Name>
               <AggregateFunction>Count</AggregateFunction>
               <DataType>Integer</DataType>
               <Source>
@@ -6434,7 +6435,7 @@
                       </connector>
                     </ddscontrol>
                   </dds>
-</DiagramLayout>
+                </DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
                 <DiagramViewPortLeft>-2302</DiagramViewPortLeft>
@@ -6882,85 +6883,85 @@
               <xs:selector xpath=".//dbo_store" />
               <xs:field xpath="storeID" />
             </xs:unique>
-            <xs:keyref name="store_address_id_fkey" refer="dbo_address_Constraint1">
-              <xs:selector xpath=".//dbo_store" />
-              <xs:field xpath="address_id" />
-            </xs:keyref>
             <xs:keyref name="FK_store_staff" refer="dbo_staff_Constraint1">
               <xs:selector xpath=".//dbo_store" />
               <xs:field xpath="manager_staff_id" />
+            </xs:keyref>
+            <xs:keyref name="store_address_id_fkey" refer="dbo_address_Constraint1">
+              <xs:selector xpath=".//dbo_store" />
+              <xs:field xpath="address_id" />
             </xs:keyref>
             <xs:keyref name="staff_address_id_fkey" refer="dbo_address_Constraint1">
               <xs:selector xpath=".//dbo_staff" />
               <xs:field xpath="address_id" />
             </xs:keyref>
-            <xs:keyref name="RentalPayment_CID_fkey" refer="dbo_customer_Constraint1">
+            <xs:keyref name="FK_RentalPayment_staff" refer="dbo_staff_Constraint1">
               <xs:selector xpath=".//dbo_RentalPayment" />
-              <xs:field xpath="CID" />
-            </xs:keyref>
-            <xs:keyref name="FK_RentalPayment_date" refer="dbo_Date_Constraint1">
-              <xs:selector xpath=".//dbo_RentalPayment" />
-              <xs:field xpath="DateKey" />
-            </xs:keyref>
-            <xs:keyref name="FK_RentalPayment_rental" refer="dbo_rental_Constraint1">
-              <xs:selector xpath=".//dbo_RentalPayment" />
-              <xs:field xpath="rental_id" />
-            </xs:keyref>
-            <xs:keyref name="FK_RentalPayment_store" refer="dbo_store_Constraint1">
-              <xs:selector xpath=".//dbo_RentalPayment" />
-              <xs:field xpath="StoreID" />
+              <xs:field xpath="StaffID" />
             </xs:keyref>
             <xs:keyref name="FK_RentalPayment_film" refer="dbo_film_Constraint1">
               <xs:selector xpath=".//dbo_RentalPayment" />
               <xs:field xpath="film_id" />
             </xs:keyref>
-            <xs:keyref name="FK_RentalPayment_staff" refer="dbo_staff_Constraint1">
+            <xs:keyref name="FK_RentalPayment_store" refer="dbo_store_Constraint1">
               <xs:selector xpath=".//dbo_RentalPayment" />
-              <xs:field xpath="StaffID" />
+              <xs:field xpath="StoreID" />
             </xs:keyref>
-            <xs:keyref name="rental_staff_id_key" refer="dbo_staff_Constraint1">
-              <xs:selector xpath=".//dbo_rental" />
-              <xs:field xpath="StaffID" />
+            <xs:keyref name="FK_RentalPayment_rental" refer="dbo_rental_Constraint1">
+              <xs:selector xpath=".//dbo_RentalPayment" />
+              <xs:field xpath="rental_id" />
+            </xs:keyref>
+            <xs:keyref name="FK_RentalPayment_date" refer="dbo_Date_Constraint1">
+              <xs:selector xpath=".//dbo_RentalPayment" />
+              <xs:field xpath="DateKey" />
+            </xs:keyref>
+            <xs:keyref name="RentalPayment_CID_fkey" refer="dbo_customer_Constraint1">
+              <xs:selector xpath=".//dbo_RentalPayment" />
+              <xs:field xpath="CID" />
             </xs:keyref>
             <xs:keyref name="rental_inventory_id_fkey" refer="dbo_inventory_Constraint1">
               <xs:selector xpath=".//dbo_rental" />
               <xs:field xpath="inventory_id" />
             </xs:keyref>
-            <xs:keyref name="FK_inventory_store" refer="dbo_store_Constraint1">
-              <xs:selector xpath=".//dbo_inventory" />
-              <xs:field xpath="storeID" />
+            <xs:keyref name="rental_staff_id_key" refer="dbo_staff_Constraint1">
+              <xs:selector xpath=".//dbo_rental" />
+              <xs:field xpath="StaffID" />
             </xs:keyref>
             <xs:keyref name="inventory_film_id_fkey" refer="dbo_film_Constraint1">
               <xs:selector xpath=".//dbo_inventory" />
               <xs:field xpath="film_id" />
             </xs:keyref>
-            <xs:keyref name="film_category_film_id_fkey" refer="dbo_film_Constraint1">
-              <xs:selector xpath=".//dbo_film_category" />
-              <xs:field xpath="film_id" />
+            <xs:keyref name="FK_inventory_store" refer="dbo_store_Constraint1">
+              <xs:selector xpath=".//dbo_inventory" />
+              <xs:field xpath="storeID" />
             </xs:keyref>
             <xs:keyref name="film_category_category_id_fkey" refer="dbo_category_Constraint1">
               <xs:selector xpath=".//dbo_film_category" />
               <xs:field xpath="category_id" />
             </xs:keyref>
-            <xs:keyref name="film_actor_actor_id_fkey" refer="Constraint1">
-              <xs:selector xpath=".//dbo_film_actor" />
-              <xs:field xpath="actor_id" />
+            <xs:keyref name="film_category_film_id_fkey" refer="dbo_film_Constraint1">
+              <xs:selector xpath=".//dbo_film_category" />
+              <xs:field xpath="film_id" />
             </xs:keyref>
             <xs:keyref name="film_actor_film_id_fkey" refer="dbo_film_Constraint1">
               <xs:selector xpath=".//dbo_film_actor" />
               <xs:field xpath="film_id" />
             </xs:keyref>
+            <xs:keyref name="film_actor_actor_id_fkey" refer="Constraint1">
+              <xs:selector xpath=".//dbo_film_actor" />
+              <xs:field xpath="actor_id" />
+            </xs:keyref>
             <xs:keyref name="film_language_id_fkey" refer="dbo_language_Constraint1">
               <xs:selector xpath=".//dbo_film" />
               <xs:field xpath="language_id" />
             </xs:keyref>
-            <xs:keyref name="customer_address_id_fkey" refer="dbo_address_Constraint1">
-              <xs:selector xpath=".//dbo_customer" />
-              <xs:field xpath="address_id" />
-            </xs:keyref>
             <xs:keyref name="FK_customer_store" refer="dbo_store_Constraint1">
               <xs:selector xpath=".//dbo_customer" />
               <xs:field xpath="storeID" />
+            </xs:keyref>
+            <xs:keyref name="customer_address_id_fkey" refer="dbo_address_Constraint1">
+              <xs:selector xpath=".//dbo_customer" />
+              <xs:field xpath="address_id" />
             </xs:keyref>
             <xs:keyref name="fk_city" refer="dbo_country_Constraint1">
               <xs:selector xpath=".//dbo_city" />
