@@ -268,6 +268,7 @@ What follows are two examples of \textit{attribute relationships} structures. Ot
 	\caption{Attribute relationship of the dimension \textbf{Customer}. Dimensions \textit{Rental}, \textit{Store} and \textit{Staff} have a similar structure. Note that the \textit{valide} attribute is kept so that it is possible to aggregate only using the values that are currently valid.}
 \end{figure}
 
+\newpage
 
 \subsection{Cube Usage Examples}
 \vspace{-10mm}
@@ -282,6 +283,20 @@ What follows are two examples of \textit{attribute relationships} structures. Ot
 		\centering
 		\includegraphics[width=.8\linewidth]{{"./cube_example_2"}.png}
 		\caption{Rental income divided by \textit{film category} and \textit{film rating}.}
+	\end{subfigure}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./cube_browsing_1"}.png}
+		\caption{Number of rentals, divided by \textit{film title},\\ and by \textit{customer geographical information}.}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{{"./cube_browsing_2"}.png}
+		\caption{Rental income and quantity divided by \textit{manager\_id}, \textit{year and month of payment} and \textit{payment\_status}.}
 	\end{subfigure}
 \end{figure}
 

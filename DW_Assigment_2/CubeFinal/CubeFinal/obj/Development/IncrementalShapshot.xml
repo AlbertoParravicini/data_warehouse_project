@@ -33,42 +33,42 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>lTvfUiCINbxLEiWxeqQkdnpERgw=03/12/2016 12:46:5003/12/2016 09:13:51</TimeStamp>
+        <TimeStamp>NbCWgQvt/ynaGfos4VSes7Kh+K0=06/12/2016 19:10:0706/12/2016 19:10:07</TimeStamp>
         <ID>
           <String>Staff</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>OY2Oz+VyzZvWltVf0j3CIJ3TunI=03/12/2016 12:48:4103/12/2016 09:13:51</TimeStamp>
+        <TimeStamp>xOIscVcy4L2I14M0U97on2GYEn8=04/12/2016 10:54:3803/12/2016 09:13:51</TimeStamp>
         <ID>
           <String>Film</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>1mOTMiYH3PZaDLyYdrhixymsraU=03/12/2016 12:49:0003/12/2016 09:13:51</TimeStamp>
+        <TimeStamp>r8YRhF6qKdk2W2rHLxeRcc6bPKU=06/12/2016 19:10:0706/12/2016 19:10:07</TimeStamp>
         <ID>
           <String>Store</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>q7+V1/61r/HpaVHa2KKSuAf0vjc=03/12/2016 12:49:5703/12/2016 09:13:51</TimeStamp>
+        <TimeStamp>+6bZaVfJaMyFEtEyUUBxaihPku4=06/12/2016 19:10:0706/12/2016 19:10:07</TimeStamp>
         <ID>
           <String>Rental</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>HAzyP9Jtr34CpJGpnm0d5IIOsPc=03/12/2016 13:32:3503/12/2016 09:13:51</TimeStamp>
+        <TimeStamp>PSHIjGn5dexfCija7jWEg9wUKF8=04/12/2016 10:54:3803/12/2016 09:13:51</TimeStamp>
         <ID>
           <String>Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>c/c0eK166Ej4f/IqUy2edFXRsdI=03/12/2016 12:47:3703/12/2016 09:13:51</TimeStamp>
+        <TimeStamp>u0SZvmVO9G+ZUbxSPSizmy1wWeo=06/12/2016 19:33:0106/12/2016 19:10:07</TimeStamp>
         <ID>
           <String>Customer</String>
         </ID>
@@ -96,7 +96,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>Xwcnhfl44P55Bqt+g+UMBUhpNxA=04/12/2016 10:17:0203/12/2016 09:13:51yCd5lm3mnRztHkpAs8wgzxKJ3Gk=03/12/2016 13:32:3503/12/2016 09:13:51</TimeStamp>
+        <TimeStamp>O8lpDZPfOOY2NWetLKX5qaIrLDI=06/12/2016 19:33:0106/12/2016 19:10:07yCd5lm3mnRztHkpAs8wgzxKJ3Gk=03/12/2016 13:32:3503/12/2016 09:13:51</TimeStamp>
         <ID>
           <String>Assignment Solution I</String>
         </ID>
@@ -113,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2016-12-04T09:17:40.416667Z</LastDeployed>
+  <LastDeployed>2016-12-06T18:33:14.126667Z</LastDeployed>
 </DeploymentSnapshot>

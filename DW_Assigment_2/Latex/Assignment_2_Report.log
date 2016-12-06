@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.12)  4 DEC 2016 11:00
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.8.22)  6 DEC 2016 19:42
 entering extended mode
 **Assignment_2_Report.tex
 (Assignment_2_Report.tex
@@ -9,14 +9,14 @@ Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -27,19 +27,18 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+("C:\Program Files (x86)\MiKTeX 2.9\tex\xelatex\xetex-def\xetex.def"
+File: xetex.def 2015/09/11 v4.06 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count87
-)
+))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\colortbl\colortbl.sty"
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
@@ -56,7 +55,6 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 )
 \rownum=\count88
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -140,7 +138,7 @@ Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -151,9 +149,10 @@ Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -207,6 +206,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen117
+Requested font "pzdr" at 0.00002pt
 \Fld@menulength=\count100
 \Field@Width=\dimen118
 \Fld@charsize=\dimen119
@@ -224,17 +224,32 @@ LaTeX Info: Redefining \pageref on input line 6369.
 \c@Hfootnote=\count103
 )
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Message: Driver (autodetected): hxetex.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count104
-\c@bookmark@seq@number=\count105
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
+File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\puenc.def"
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty"
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box29
+\c@Hy@AnnotLevel=\count104
+\HyField@AnnotCount=\count105
+\Fld@listcount=\count106
+\c@bookmark@seq@number=\count107
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
 )
 \Hy@SectionHShift=\skip60
 )
@@ -243,8 +258,8 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip61
 \enit@outerparindent=\dimen120
 \enit@toks=\toks20
-\enit@inbox=\box29
-\enitdp@description=\count106
+\enit@inbox=\box30
+\enitdp@description=\count108
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -258,12 +273,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen128
 \cmidrulekern=\dimen129
 \defaultaddspace=\dimen130
-\@cmidla=\count107
-\@cmidlb=\count108
+\@cmidla=\count109
+\@cmidlb=\count110
 \@aboverulesep=\dimen131
 \@belowrulesep=\dimen132
-\@thisruleclass=\count109
-\@lastruleclass=\count110
+\@thisruleclass=\count111
+\@lastruleclass=\count112
 \@thisrulewidth=\dimen133
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
@@ -273,7 +288,7 @@ Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 \TX@old@col=\dimen136
 \TX@target=\dimen137
 \TX@delta=\dimen138
-\TX@cols=\count111
+\TX@cols=\count113
 \TX@ftn=\toks21
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty"
@@ -281,14 +296,14 @@ Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count112
+\etb@tempcnta=\count114
 )
-\csq@reset=\count113
-\csq@gtype=\count114
-\csq@glevel=\count115
-\csq@qlevel=\count116
-\csq@maxlvl=\count117
-\csq@tshold=\count118
+\csq@reset=\count115
+\csq@gtype=\count116
+\csq@glevel=\count117
+\csq@qlevel=\count118
+\csq@maxlvl=\count119
+\csq@tshold=\count120
 \csq@ltx@everypar=\toks22
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\csquotes\csquotes.def"
@@ -302,9 +317,9 @@ File: csquotes.cfg
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count119
-\Gm@cntv=\count120
-\c@Gm@tempcnt=\count121
+\Gm@cnth=\count121
+\Gm@cntv=\count122
+\c@Gm@tempcnt=\count123
 \Gm@bindingoffset=\dimen139
 \Gm@wd@mp=\dimen140
 \Gm@odd@mp=\dimen141
@@ -315,7 +330,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks23
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg"))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip62
@@ -336,30 +351,30 @@ Package: amsbsy 1999/11/29 v1.2d
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count122
+\inf@bad=\count124
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count123
-\leftroot@=\count124
+\uproot@=\count125
+\leftroot@=\count126
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count125
-\DOTSCASE@=\count126
+\classnum@=\count127
+\DOTSCASE@=\count128
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box30
-\strutbox@=\box31
+\Mathstrutbox@=\box31
+\strutbox@=\box32
 \big@size=\dimen149
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count127
-\c@MaxMatrixCols=\count128
+\macc@depth=\count129
+\c@MaxMatrixCols=\count130
 \dotsspace@=\muskip11
-\c@parentequation=\count129
-\dspbrk@lvl=\count130
+\c@parentequation=\count131
+\dspbrk@lvl=\count132
 \tag@help=\toks25
-\row@=\count131
-\column@=\count132
-\maxfields@=\count133
+\row@=\count133
+\column@=\count134
+\maxfields@=\count135
 \andhelp@=\toks26
 \eqnshift@=\dimen150
 \alignsep@=\dimen151
@@ -385,7 +400,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks29
 \XKV@tempa@toks=\toks30
 )
-\XKV@depth=\count134
+\XKV@depth=\count136
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
@@ -407,23 +422,23 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: xetex.def on input line 94.
 )
 \Gin@req@height=\dimen156
 \Gin@req@width=\dimen157
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box32
+\collectedbox=\box33
 )
 \tc@llx=\dimen158
 \tc@lly=\dimen159
 \tc@urx=\dimen160
 \tc@ury=\dimen161
-Package trimclip Info: Using driver 'tc-pdftex.def'.
+Package trimclip Info: Using driver 'tc-xetex.def'.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
-File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\adjustbox\tc-xetex.def"
+File: tc-xetex.def 2012/05/13 v1.0 Clipping driver for xetex
 ))
 \adjbox@Width=\dimen162
 \adjbox@Height=\dimen163
@@ -432,12 +447,12 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count135
+\c@checkoddpage=\count137
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box33
-\sift@deathcycles=\count136
+\@vwid@box=\box34
+\sift@deathcycles=\count138
 \@vwid@loff=\dimen166
 \@vwid@roff=\dimen167
 ))
@@ -446,24 +461,24 @@ Package: titlepic 2009/08/03 1.1 Package to display a picture on the title page
 
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count137
-\lst@gtempboxa=\box34
+\lst@mode=\count139
+\lst@gtempboxa=\box35
 \lst@token=\toks31
-\lst@length=\count138
+\lst@length=\count140
 \lst@currlwidth=\dimen168
-\lst@column=\count139
-\lst@pos=\count140
+\lst@column=\count141
+\lst@pos=\count142
 \lst@lostspace=\dimen169
 \lst@width=\dimen170
-\lst@newlines=\count141
-\lst@lineno=\count142
+\lst@newlines=\count143
+\lst@lineno=\count144
 \lst@maxwidth=\dimen171
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count143
-\lst@skipnumbers=\count144
-\lst@framebox=\box35
+\c@lstnumber=\count145
+\lst@skipnumbers=\count146
+\lst@framebox=\box36
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -472,7 +487,7 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
-\c@ContinuedFloat=\count145
+\c@ContinuedFloat=\count147
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -484,230 +499,21 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
+)
+Requested font "ecrm1000" at 10.0pt
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks32
 \inpenc@posthook=\toks33
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
-Now handling font encoding OML ...
-... no UTF-8 mapping file for font encoding OML
-Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0104 (decimal 260)
-   defining Unicode char U+0105 (decimal 261)
-   defining Unicode char U+0106 (decimal 262)
-   defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+010C (decimal 268)
-   defining Unicode char U+010D (decimal 269)
-   defining Unicode char U+010E (decimal 270)
-   defining Unicode char U+010F (decimal 271)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0118 (decimal 280)
-   defining Unicode char U+0119 (decimal 281)
-   defining Unicode char U+011A (decimal 282)
-   defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011E (decimal 286)
-   defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0130 (decimal 304)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0132 (decimal 306)
-   defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0139 (decimal 313)
-   defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013D (decimal 317)
-   defining Unicode char U+013E (decimal 318)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0143 (decimal 323)
-   defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0147 (decimal 327)
-   defining Unicode char U+0148 (decimal 328)
-   defining Unicode char U+014A (decimal 330)
-   defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+0150 (decimal 336)
-   defining Unicode char U+0151 (decimal 337)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0154 (decimal 340)
-   defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0158 (decimal 344)
-   defining Unicode char U+0159 (decimal 345)
-   defining Unicode char U+015A (decimal 346)
-   defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015E (decimal 350)
-   defining Unicode char U+015F (decimal 351)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0162 (decimal 354)
-   defining Unicode char U+0163 (decimal 355)
-   defining Unicode char U+0164 (decimal 356)
-   defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+016E (decimal 366)
-   defining Unicode char U+016F (decimal 367)
-   defining Unicode char U+0170 (decimal 368)
-   defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+0179 (decimal 377)
-   defining Unicode char U+017A (decimal 378)
-   defining Unicode char U+017B (decimal 379)
-   defining Unicode char U+017C (decimal 380)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-)
-Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00B8 (decimal 184)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-)
-Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-)
-Now handling font encoding OMX ...
-... no UTF-8 mapping file for font encoding OMX
-Now handling font encoding U ...
-... no UTF-8 mapping file for font encoding U
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2423 (decimal 9251)
-))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
 Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-\c@subfigure=\count146
-\c@subtable=\count147
+\c@subfigure=\count148
+\c@subtable=\count149
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\classicthesis\classicthesis.sty"
 Package: classicthesis 2015/09/06 v4.2 Typographic style for a classic-looking 
@@ -728,21 +534,20 @@ Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eulervm\eulervm.sty"
 Package: eulervm 2005/01/11 v4.0 (WaS)
 )
+Requested font "pplr9d" scaled 7000
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks34
-\MT@count=\count148
+\MT@count=\count150
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen172
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count149
+\MT@listname@count=\count151
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def"
-File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 915.
-LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip65
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\microtype-xetex.def"
+File: microtype-xetex.def 2013/05/23 v2.5a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 254.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
@@ -771,8 +576,8 @@ Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 )))
-\ta@bcor=\skip66
-\ta@div=\count150
+\ta@bcor=\skip65
+\ta@div=\count152
 Package typearea Info: You've used standard option `a4paper'.
 (typearea)             This is correct!
 (typearea)             Internally I'm using `paper=a4'.
@@ -785,15 +590,16 @@ Package typearea Info: You've used standard option `oneside'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `twoside=false' there
 (typearea)             instead of `oneside', too.
-\ta@hblk=\skip67
-\ta@vblk=\skip68
-\ta@temp=\skip69
-\footheight=\skip70
+\ta@hblk=\skip66
+\ta@vblk=\skip67
+\ta@temp=\skip68
+\footheight=\skip69
 LaTeX Font Info:    Try loading font information for T1+pplj on input line 1509
 .
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pplj.fd"
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
+Requested font "pplr9d" at 10.0pt
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 8
 (typearea)             BCOR = 0.0pt
@@ -835,12 +641,13 @@ Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\soul\soul.sty"
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+Requested font "ectt1000" scaled 1000
 \SOUL@word=\toks35
 \SOUL@lasttoken=\toks36
 \SOUL@cmds=\toks37
 \SOUL@buffer=\toks38
 \SOUL@token=\toks39
-\SOUL@spaceskip=\skip71
+\SOUL@spaceskip=\skip70
 \SOUL@ttwidth=\dimen173
 \SOUL@uldp=\dimen174
 \SOUL@ulht=\dimen175
@@ -865,9 +672,9 @@ Package scrlayer-scrpage Info: auto-selection of `pagestyleset=standard'.
 1: subsection
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box36
-\beforetitleunit=\skip72
-\aftertitleunit=\skip73
+\ttl@box=\box37
+\beforetitleunit=\skip71
+\aftertitleunit=\skip72
 \ttl@plus=\dimen176
 \ttl@minus=\dimen177
 \ttl@toksa=\toks40
@@ -878,51 +685,51 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
-\cftparskip=\skip74
-\cftbeforetoctitleskip=\skip75
-\cftaftertoctitleskip=\skip76
-\cftbeforepartskip=\skip77
-\cftpartnumwidth=\skip78
-\cftpartindent=\skip79
-\cftbeforesecskip=\skip80
-\cftsecindent=\skip81
-\cftsecnumwidth=\skip82
-\cftbeforesubsecskip=\skip83
-\cftsubsecindent=\skip84
-\cftsubsecnumwidth=\skip85
-\cftbeforesubsubsecskip=\skip86
-\cftsubsubsecindent=\skip87
-\cftsubsubsecnumwidth=\skip88
-\cftbeforeparaskip=\skip89
-\cftparaindent=\skip90
-\cftparanumwidth=\skip91
-\cftbeforesubparaskip=\skip92
-\cftsubparaindent=\skip93
-\cftsubparanumwidth=\skip94
-\cftbeforeloftitleskip=\skip95
-\cftafterloftitleskip=\skip96
-\cftbeforefigskip=\skip97
-\cftfigindent=\skip98
-\cftfignumwidth=\skip99
-\c@lofdepth=\count151
-\c@lotdepth=\count152
-\cftbeforelottitleskip=\skip100
-\cftafterlottitleskip=\skip101
-\cftbeforetabskip=\skip102
-\cfttabindent=\skip103
-\cfttabnumwidth=\skip104
+\cftparskip=\skip73
+\cftbeforetoctitleskip=\skip74
+\cftaftertoctitleskip=\skip75
+\cftbeforepartskip=\skip76
+\cftpartnumwidth=\skip77
+\cftpartindent=\skip78
+\cftbeforesecskip=\skip79
+\cftsecindent=\skip80
+\cftsecnumwidth=\skip81
+\cftbeforesubsecskip=\skip82
+\cftsubsecindent=\skip83
+\cftsubsecnumwidth=\skip84
+\cftbeforesubsubsecskip=\skip85
+\cftsubsubsecindent=\skip86
+\cftsubsubsecnumwidth=\skip87
+\cftbeforeparaskip=\skip88
+\cftparaindent=\skip89
+\cftparanumwidth=\skip90
+\cftbeforesubparaskip=\skip91
+\cftsubparaindent=\skip92
+\cftsubparanumwidth=\skip93
+\cftbeforeloftitleskip=\skip94
+\cftafterloftitleskip=\skip95
+\cftbeforefigskip=\skip96
+\cftfigindent=\skip97
+\cftfignumwidth=\skip98
+\c@lofdepth=\count153
+\c@lotdepth=\count154
+\cftbeforelottitleskip=\skip99
+\cftafterlottitleskip=\skip100
+\cftbeforetabskip=\skip101
+\cfttabindent=\skip102
+\cfttabnumwidth=\skip103
 )
-\newnumberwidth=\skip105
-\beforebibskip=\skip106
-\newchnumberwidth=\skip107
-\figurelabelwidth=\skip108
-\tablelabelwidth=\skip109
+\newnumberwidth=\skip104
+\beforebibskip=\skip105
+\newchnumberwidth=\skip106
+\figurelabelwidth=\skip107
+\tablelabelwidth=\skip108
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\footmisc\footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks41
 \footnotemargin=\dimen181
-\c@pp@next@reset=\count153
+\c@pp@next@reset=\count155
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -960,33 +767,21 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
 LaTeX Font Info:    ... okay on input line 92.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
 LaTeX Font Info:    ... okay on input line 92.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count154
-\scratchdimen=\dimen182
-\scratchbox=\box37
-\nofMPsegments=\count155
-\nofMParguments=\count156
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count157
-\MPscratchDim=\dimen183
-\MPnumerator=\count158
-\makeMPintoPDFobject=\count159
-\everyMPtoPDFconversion=\toks43
-)
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatrow package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box38
 Package hyperref Info: Link coloring ON on input line 92.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count160
+\c@section@level=\count156
 )
 LaTeX Info: Redefining \ref on input line 92.
 LaTeX Info: Redefining \pageref on input line 92.
@@ -995,7 +790,6 @@ LaTeX Info: Redefining \nameref on input line 92.
 (Assignment_2_Report.out) (Assignment_2_Report.out)
 \@outlinefile=\write3
 
-*geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 
 Package geometry Warning: The marginal notes overrun the paper.
@@ -1033,17 +827,13 @@ Package geometry Warning: The marginal notes overrun the paper.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count161
+\c@lstlisting=\count157
 LaTeX Info: Redefining \microtypecontext on input line 92.
-Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: Automatic font expansion enabled (level 2),
-(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
-Package microtype Info: No adjustment of interword spacing.
-Package microtype Info: No adjustment of character kerning.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-ppl.cfg"
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
@@ -1056,47 +846,72 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 92.
 Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 92.
 
+Requested font "pplr9d" at 17.28pt
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 94.
+Requested font "pplb9d" at 17.28pt
+Requested font "pplr9d" at 12.0pt
+Requested font "pplr9d" at 9.0pt
+Requested font "pplr9d" at 7.0pt
 LaTeX Font Info:    Try loading font information for U+zeur on input line 94.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
+Requested font "zeurm10" at 12.0pt
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
+Requested font "zeurm10" at 9.0pt
+Requested font "zeurm7" at 7.0pt
 LaTeX Font Info:    Try loading font information for U+zeus on input line 94.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eulervm\uzeus.fd"
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 )
+Requested font "zeusm10" at 12.0pt
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\microtype\mt-eus.cfg"
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
+Requested font "zeusm10" at 9.0pt
+Requested font "zeusm7" at 7.0pt
 LaTeX Font Info:    Try loading font information for U+zeuex on input line 94.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eulervm\uzeuex.fd"
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
+Requested font "zeuex10" at 12.0pt
+Requested font "zeuex10" at 9.0pt
+Requested font "zeuex10" at 7.0pt
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 94.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
+Requested font "zplmr7t" at 12.0pt
 Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+Requested font "zplmr7t" at 9.0pt
+Requested font "zplmr7t" at 7.0pt
 
 
 LaTeX Warning: No \author given.
 
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <14> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 97.
+Requested font "pplb9d" at 14.0pt
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def"
+File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
+
+)
 LaTeX Font Info:    Try loading font information for OMS+pplj on input line 99.
 
 LaTeX Font Info:    No file OMSpplj.fd. on input line 99.
+
 
 LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
@@ -1104,206 +919,111 @@ LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 99.
-<./Images/"./main_etl_part_1".png, id=35, 646.66594pt x 418.18735pt>
-File: ./Images/"./main_etl_part_1".png Graphic file (type png)
+Requested font "pplb9d" at 10.0pt
+Requested font "pplri9d" at 10.0pt
+File: ./Images/"./main_etl_part_1".png Graphic file (type QTm)
+<use  "./Images/"./main_etl_part_1".png" >
+File: ./Images/"./main_etl_part_2".png Graphic file (type QTm)
 
-<use ./Images/"./main_etl_part_1".png>
-Package pdftex.def Info: ./Images/"./main_etl_part_1".png used on input line 12
-4.
-(pdftex.def)             Requested size: 469.47308pt x 303.6024pt.
-
-<./Images/"./main_etl_part_2".png, id=37, 384.31078pt x 391.08609pt>
-File: ./Images/"./main_etl_part_2".png Graphic file (type png)
-
-<use ./Images/"./main_etl_part_2".png>
-Package pdftex.def Info: ./Images/"./main_etl_part_2".png used on input line 13
-0.
-(pdftex.def)             Requested size: 256.07741pt x 260.60605pt.
+<use  "./Images/"./main_etl_part_2".png" >
+Requested font "pplr9d" at 5.0pt
+Requested font "zeurm5" at 5.0pt
+Requested font "zeusm5" at 5.0pt
+Requested font "zeuex10" at 5.0pt
+Requested font "zplmr7t" at 5.0pt
  [1
 
-{C:/Users/albyr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+]
+Requested font "pplrc9d" at 10.0pt
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
+Requested font "pplr9d" at 7.6pt
+Requested font "pplr9d" at 6.0pt
+Requested font "zeurm10" at 10.0pt
+Requested font "zeurm7" at 7.6pt
+Requested font "zeurm7" at 6.0pt
+Requested font "zeusm10" at 10.0pt
+Requested font "zeusm7" at 7.6pt
+Requested font "zeusm7" at 6.0pt
+Requested font "zeuex10" at 10.0pt
+Requested font "zeuex10" at 7.6pt
+Requested font "zeuex10" at 6.0pt
+Requested font "zplmr7t" at 10.0pt
+Requested font "zplmr7t" at 7.6pt
+Requested font "zplmr7t" at 6.0pt
+File: ./Images/"./address_dim".png Graphic file (type QTm)
 
-<./Images/"./address_dim".png, id=49, 244.66406pt x 375.65344pt>
-File: ./Images/"./address_dim".png Graphic file (type png)
+<use  "./Images/"./address_dim".png" >
+Requested font "pplri9d" at 9.0pt
+File: ./Images/"./customer_dim".png Graphic file (type QTm)
+ <use  "./Images/"./customer_dim".png" >
+[2]
+File: ./Images/"./staff_dim".png Graphic file (type QTm)
+ <use  "./Images/"./staff_dim".png" >
+File: ./Images/"./store_dim".png Graphic file (type QTm)
+ <use  "./Images/"./store_dim".png" >
+[3]
+File: ./Images/"./fact_part_1".png Graphic file (type QTm)
+ <use  "./Images/"./fact_part_1".png" >
+File: ./Images/"./fact_part_2".png Graphic file (type QTm)
 
-<use ./Images/"./address_dim".png>
-Package pdftex.def Info: ./Images/"./address_dim".png used on input line 144.
-(pdftex.def)             Requested size: 128.0387pt x 196.59048pt.
+<use  "./Images/"./fact_part_2".png" > [4]
+File: ./Images/"./cube".png Graphic file (type QTm)
+ <use  "./Images/"./cube".png" >
+[5]
+File: ./Images/"./dimStaff_2".png Graphic file (type QTm)
+ <use  "./Images/"./dimStaff_2".png" >
+File: ./Images/"./dimFilm_2".png Graphic file (type QTm)
+ <use  "./Images/"./dimFilm_2".png" >
+[6]
+File: ./Images/"./dimStore_2".png Graphic file (type QTm)
+ <use  "./Images/"./dimStore_2".png" >
+File: ./Images/"./dimRental_2".png Graphic file (type QTm)
 
-<./Images/"./customer_dim".png, id=50, 238.26515pt x 422.32782pt>
-File: ./Images/"./customer_dim".png Graphic file (type png)
+<use  "./Images/"./dimRental_2".png" >
+File: ./Images/"./dimDate_2".png Graphic file (type QTm)
+ <use  "./Images/"./dimDate_2".png" >
+File: ./Images/"./dimCustomer_2".png Graphic file (type QTm)
 
-<use ./Images/"./customer_dim".png>
-Package pdftex.def Info: ./Images/"./customer_dim".png used on input line 149.
-(pdftex.def)             Requested size: 128.0387pt x 226.9581pt.
- [2 <./Images/./main_etl_part_1.png> <./Images/./main_etl_part_2.png>]
-<./Images/"./staff_dim".png, id=60, 263.10797pt x 381.29953pt>
-File: ./Images/"./staff_dim".png Graphic file (type png)
+<use  "./Images/"./dimCustomer_2".png" > [7]
+File: ./Images/"./date_hierarchy".png Graphic file (type QTm)
 
-<use ./Images/"./staff_dim".png>
-Package pdftex.def Info: ./Images/"./staff_dim".png used on input line 158.
-(pdftex.def)             Requested size: 128.0387pt x 185.56422pt.
+<use  "./Images/"./date_hierarchy".png" >
+File: ./Images/"./customer_hierarchy".png Graphic file (type QTm)
 
-<./Images/"./store_dim".png, id=61, 274.40016pt x 336.50719pt>
-File: ./Images/"./store_dim".png Graphic file (type png)
+<use  "./Images/"./customer_hierarchy".png" > [8]
+File: ./Images/"./cube_example_1".png Graphic file (type QTm)
 
-<use ./Images/"./store_dim".png>
-Package pdftex.def Info: ./Images/"./store_dim".png used on input line 163.
-(pdftex.def)             Requested size: 128.0387pt x 157.02362pt.
- [3 <./Images/./address_dim.png> <./Images/./customer_dim.png> <./Images/./staf
-f_dim.png> <./Images/./store_dim.png>]
-<./Images/"./fact_part_1".png, id=72, 438.8897pt x 433.24359pt>
-File: ./Images/"./fact_part_1".png Graphic file (type png)
+<use  "./Images/"./cube_example_1".png" >
+File: ./Images/"./cube_example_2".png Graphic file (type QTm)
 
-<use ./Images/"./fact_part_1".png>
-Package pdftex.def Info: ./Images/"./fact_part_1".png used on input line 171.
-(pdftex.def)             Requested size: 341.43437pt x 337.04941pt.
+<use  "./Images/"./cube_example_2".png" >
+File: ./Images/"./cube_browsing_1".png Graphic file (type QTm)
 
-<./Images/"./fact_part_2".png, id=73, 195.73125pt x 330.8611pt>
-File: ./Images/"./fact_part_2".png Graphic file (type png)
+<use  "./Images/"./cube_browsing_1".png" >
+File: ./Images/"./cube_browsing_2".png Graphic file (type QTm)
 
-<use ./Images/"./fact_part_2".png>
-Package pdftex.def Info: ./Images/"./fact_part_2".png used on input line 188.
-(pdftex.def)             Requested size: 170.71393pt x 288.58896pt.
- [4 <./Images/./fact_part_1.png>]
-<./Images/"./cube".png, id=80, 517.935pt x 457.71pt>
-File: ./Images/"./cube".png Graphic file (type png)
-
-<use ./Images/"./cube".png>
-Package pdftex.def Info: ./Images/"./cube".png used on input line 205.
-(pdftex.def)             Requested size: 469.47308pt x 414.90344pt.
- [5 <./Images/./fact_part_2.png>]
-<./Images/"./dimStaff_2".png, id=89, 398.61421pt x 328.60266pt>
-File: ./Images/"./dimStaff_2".png Graphic file (type png)
-
-<use ./Images/"./dimStaff_2".png>
-Package pdftex.def Info: ./Images/"./dimStaff_2".png used on input line 216.
-(pdftex.def)             Requested size: 170.71718pt x 140.7298pt.
-
-<./Images/"./dimFilm_2".png, id=90, 216.81pt x 251.06297pt>
-File: ./Images/"./dimFilm_2".png Graphic file (type png)
-
-<use ./Images/"./dimFilm_2".png>
-Package pdftex.def Info: ./Images/"./dimFilm_2".png used on input line 221.
-(pdftex.def)             Requested size: 170.71718pt x 197.6978pt.
- [6 <./Images/./cube.png>]
-<./Images/"./dimStore_2".png, id=97, 359.84438pt x 289.4564pt>
-File: ./Images/"./dimStore_2".png Graphic file (type png)
-
-<use ./Images/"./dimStore_2".png>
-Package pdftex.def Info: ./Images/"./dimStore_2".png used on input line 230.
-(pdftex.def)             Requested size: 170.71718pt x 137.32538pt.
-
-<./Images/"./dimRental_2".png, id=98, 409.1536pt x 488.19891pt>
-File: ./Images/"./dimRental_2".png Graphic file (type png)
-
-<use ./Images/"./dimRental_2".png>
-Package pdftex.def Info: ./Images/"./dimRental_2".png used on input line 235.
-(pdftex.def)             Requested size: 170.71718pt x 203.70126pt.
-
-<./Images/"./dimDate_2".png, id=99, 284.56313pt x 199.87172pt>
-File: ./Images/"./dimDate_2".png Graphic file (type png)
-
-<use ./Images/"./dimDate_2".png>
-Package pdftex.def Info: ./Images/"./dimDate_2".png used on input line 244.
-(pdftex.def)             Requested size: 170.71718pt x 119.9148pt.
-
-<./Images/"./dimCustomer_2".png, id=100, 386.56921pt x 415.5525pt>
-File: ./Images/"./dimCustomer_2".png Graphic file (type png)
-
-<use ./Images/"./dimCustomer_2".png>
-Package pdftex.def Info: ./Images/"./dimCustomer_2".png used on input line 249.
-
-(pdftex.def)             Requested size: 170.71718pt x 183.5158pt.
- [7 <./Images/./dimStaff_2.png> <./Images/./dimFilm_2.png> <./Images/./dimStore
-_2.png> <./Images/./dimRental_2.png> <./Images/./dimDate_2.png> <./Images/./dim
-Customer_2.png>]
-<./Images/"./date_hierarchy".png, id=116, 491.58656pt x 57.96657pt>
-File: ./Images/"./date_hierarchy".png Graphic file (type png)
-
-<use ./Images/"./date_hierarchy".png>
-Package pdftex.def Info: ./Images/"./date_hierarchy".png used on input line 261
-.
-(pdftex.def)             Requested size: 469.47308pt x 55.36067pt.
-
-<./Images/"./customer_hierarchy".png, id=117, 529.98pt x 163.73672pt>
-File: ./Images/"./customer_hierarchy".png Graphic file (type png)
-
-<use ./Images/"./customer_hierarchy".png>
-Package pdftex.def Info: ./Images/"./customer_hierarchy".png used on input line
- 267.
-(pdftex.def)             Requested size: 469.47308pt x 145.04564pt.
-
-<./Images/"./cube_example_1".png, id=118, 477.65953pt x 334.24875pt>
-File: ./Images/"./cube_example_1".png Graphic file (type png)
-
-<use ./Images/"./cube_example_1".png>
-Package pdftex.def Info: ./Images/"./cube_example_1".png used on input line 278
-.
-(pdftex.def)             Requested size: 170.71718pt x 119.4573pt.
-
-<./Images/"./cube_example_2".png, id=119, 404.26031pt x 379.04109pt>
-File: ./Images/"./cube_example_2".png Graphic file (type png)
-
-<use ./Images/"./cube_example_2".png>
-Package pdftex.def Info: ./Images/"./cube_example_2".png used on input line 283
-.
-(pdftex.def)             Requested size: 170.71718pt x 160.0695pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 289.
- [8 <./Images/./date_hierarchy.png> <./Images/./customer_hierarchy.png> <./Imag
-es/./cube_example_1.png> <./Images/./cube_example_2.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 289.
+<use  "./Images/"./cube_browsing_2".png" >
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (Assignment_2_Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 289.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 304.
 
-
-Package rerunfilecheck Warning: File `Assignment_2_Report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Assignment_2_Report.out':
-(rerunfilecheck)             Before: 0FA9E6E08888241F1B9DF16815773CD5;482
-(rerunfilecheck)             After:  0C4C50717DC30DD7C69906350539BE4A;539.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 289.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 17032 strings out of 493673
- 287582 string characters out of 3141530
- 484017 words of memory out of 3000000
- 19803 multiletter control sequences out of 15000+200000
- 64889 words of font info for 253 fonts, out of 3000000 for 9000
- 1027 hyphenation exceptions out of 8191
- 56i,20n,80p,945b,669s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.3.4} has been referenced but does not 
-exist, replaced by a fixed one
+ 19049 strings out of 428755
+ 307914 string characters out of 3163194
+ 487242 words of memory out of 3000000
+ 22142 multiletter control sequences out of 15000+200000
+ 39531 words of font info for 60 fonts, out of 3000000 for 9000
+ 1098 hyphenation exceptions out of 8191
+ 56i,20n,80p,945b,662s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-pdfTeX warning (dest): name{subsection.3.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.3.2} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/urw/palatino/uplb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
-rw/palatino/uplr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palat
-ino/uplri8a.pfb>
-Output written on Assignment_2_Report.pdf (8 pages, 981031 bytes).
-PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 52896 words of extra memory for PDF output out of 61914 (max. 10000000)
-
+Output written on Assignment_2_Report.pdf (9 pages).
