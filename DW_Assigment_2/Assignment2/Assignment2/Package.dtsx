@@ -11,8 +11,8 @@
   DTS:LocaleID="1040"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="118"
-  DTS:VersionGUID="{4C207914-9B03-4976-95CD-18DE12C4E372}">
+  DTS:VersionBuild="119"
+  DTS:VersionGUID="{153F86F0-2EAD-45CA-BABC-7CE1258C0F35}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -10760,7 +10760,7 @@ where [refTable].[store_id] = ?</property>
         <NodeLayout
           Size="217,42"
           Id="Package\Add back manager constraint"
-          TopLeft="498.916666666667,2022.83333333333" />
+          TopLeft="497.916666666667,2022.33333333333" />
         <NodeLayout
           Size="159.5,42"
           Id="Package\Add Default Date"
@@ -10991,18 +10991,18 @@ where [refTable].[store_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 16]"
-          TopLeft="609.479166666667,2064.83333333333">
+          TopLeft="608.979166666667,2064.33333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,68.7916666666697"
+              EndConnector="0,69.2916666666697"
               Start="0,0"
-              End="0,61.2916666666697">
+              End="0,61.7916666666697">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.2916666666697" />
+                    End="0,61.7916666666697" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11169,18 +11169,18 @@ where [refTable].[store_id] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 23]"
-          TopLeft="607.416666666667,1990">
+          TopLeft="606.916666666667,1990">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,32.8333333333298"
+              EndConnector="0,32.3333333333301"
               Start="0,0"
-              End="0,25.3333333333298">
+              End="0,24.8333333333301">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.3333333333298" />
+                    End="0,24.8333333333301" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

@@ -741,9 +741,6 @@
         <Hierarchy dwd:design-time-name="09c3f245-bc27-4309-9173-85d6eafb186d">
           <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
-        <Hierarchy dwd:design-time-name="c27b38e7-d2b8-4b42-886a-37eb9ecc4a0d">
-          <HierarchyID>Hierarchy 2</HierarchyID>
-        </Hierarchy>
       </Hierarchies>
     </Dimension>
     <Dimension dwd:design-time-name="ac63e8fc-462c-4fad-ae22-1c5fbd51f027">

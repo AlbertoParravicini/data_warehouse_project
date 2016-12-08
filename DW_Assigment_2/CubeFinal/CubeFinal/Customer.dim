@@ -794,27 +794,6 @@
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="2b16b65d-39e0-4e13-8ae4-59ed9011a36f">
-      <ID>Hierarchy 2</ID>
-      <Name>Hierarchy</Name>
-      <Levels>
-        <Level dwd:design-time-name="6d057c2d-a733-47ed-bd63-6ea8594a8adf">
-          <ID>Country Id</ID>
-          <Name>Country Id</Name>
-          <SourceAttributeID>Country Id</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="3e7b7b90-7099-4d88-abbf-9d6b3bcdc469">
-          <ID>City Id</ID>
-          <Name>City Id</Name>
-          <SourceAttributeID>City Id</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="72db058a-fc85-4f9f-8631-40c430f0361e">
-          <ID>Customer Address ID</ID>
-          <Name>Customer Address ID</Name>
-          <SourceAttributeID>Address Id</SourceAttributeID>
-        </Level>
-      </Levels>
-    </Hierarchy>
   </Hierarchies>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

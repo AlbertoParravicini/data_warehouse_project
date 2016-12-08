@@ -68,7 +68,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>u0SZvmVO9G+ZUbxSPSizmy1wWeo=06/12/2016 19:33:0106/12/2016 19:10:07</TimeStamp>
+        <TimeStamp>CFM8D5FlWzYYN1xq6ecaJvQRcjI=06/12/2016 19:46:0606/12/2016 19:10:07</TimeStamp>
         <ID>
           <String>Customer</String>
         </ID>
@@ -96,7 +96,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>O8lpDZPfOOY2NWetLKX5qaIrLDI=06/12/2016 19:33:0106/12/2016 19:10:07yCd5lm3mnRztHkpAs8wgzxKJ3Gk=03/12/2016 13:32:3503/12/2016 09:13:51</TimeStamp>
+        <TimeStamp>VSoDxE1x8chZgg6fsvsbm3j4LtA=06/12/2016 19:46:0606/12/2016 19:10:07yCd5lm3mnRztHkpAs8wgzxKJ3Gk=03/12/2016 13:32:3503/12/2016 09:13:51</TimeStamp>
         <ID>
           <String>Assignment Solution I</String>
         </ID>
@@ -113,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2016-12-06T18:33:14.126667Z</LastDeployed>
+  <LastDeployed>2016-12-08T15:25:57.973333Z</LastDeployed>
 </DeploymentSnapshot>
